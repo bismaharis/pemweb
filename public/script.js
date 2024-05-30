@@ -31,3 +31,31 @@ window.onscroll = function() {
     header.classList.remove('opacity-75');
   }
 };
+
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+  autoplay: {
+      delay: 5000,
+  },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+});
+
+document.querySelectorAll('.swiper-slide').forEach(slide => {
+  slide.addEventListener('click', () => {
+    slide.classList.toggle('active');
+    if (slide.classList.contains('active')) {
+      slide.style.transform = 'scale(1.1)';
+    } else {
+      slide.style.transform = 'scale(1)';
+    }
+  });
+});
+
+document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const emailAddress = document.getElementById('email-address').value;
+  console.log('Subscribed with email:', emailAddress);
+});

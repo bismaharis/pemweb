@@ -9,7 +9,10 @@ module.exports = {
       colors: {
         primary: '#704AF2',
         dark: '#3D3D3D',
-      }
+      }, 
+      listStyleImage: {
+        facebook: 'url("../public/assets/images/Facebook.jpg")',
+      },
     },
   },
   plugins: [],
