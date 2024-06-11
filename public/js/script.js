@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 const swiper = new Swiper('.swiper', {
   loop: true,
 
@@ -73,7 +73,8 @@ function setLanguage(language) {
   // Change the language
   document.getElementById('menu-button').innerText = language;
   toggleDropdown();
-=======
+
+
 const swiper = new Swiper('.swiper', {
   loop: true,
 
@@ -148,5 +149,6 @@ function setLanguage(language) {
   // Change the language
   document.getElementById('menu-button').innerText = language;
   toggleDropdown();
->>>>>>> c94b4372875bb9ec8b7a77e80dcd590698fb046d
+c94b4372875bb9ec8b7a77e80dcd590698fb046d
+}
 }
