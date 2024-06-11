@@ -1,7 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./public/**/*.{html,js}'],
+  content: ['./public/**/*.{html,js,php}'],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: '1px',
+      }
+    },
+    screens:{
+      sm: '640px',
+      md: '768px',
+      lg: '960px',
+      xl: '1200px',
+    },
+    backgroundImage:{
+      hero: 'url(/public/assets/images/1teamwork.jpg)',
+    },
     extend: {
       fontFamily: {
         inter: ["Inter"],

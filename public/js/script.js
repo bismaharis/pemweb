@@ -1,4 +1,11 @@
-// script.js
+const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
 
 function toggleDropdown() {
   document.getElementById('dropdown-menu').classList.toggle('hidden');
@@ -32,17 +39,6 @@ window.onscroll = function() {
   }
 };
 
-var swiper = new Swiper('.swiper-container', {
-  loop: true,
-  autoplay: {
-      delay: 5000,
-  },
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-});
-
 document.querySelectorAll('.swiper-slide').forEach(slide => {
   slide.addEventListener('click', () => {
     slide.classList.toggle('active');
@@ -59,3 +55,21 @@ document.getElementById('subscribe-form').addEventListener('submit', function(ev
   const emailAddress = document.getElementById('email-address').value;
   console.log('Subscribed with email:', emailAddress);
 });
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+function toggleDropdown() {
+  document.getElementById('dropdown-menu').classList.toggle('hidden');
+}
+
+function setLanguage(language) {
+  // Change the language
+  document.getElementById('menu-button').innerText = language;
+  toggleDropdown();
+}

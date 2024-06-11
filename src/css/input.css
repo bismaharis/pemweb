@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+body{
+  @apply font-inter text-[22px] text-slate-800;
+}
+
+a{
+  @apply text-[20px] hover:text-sky-700 transition-all duration-300;
+}
+
+h1,h2,h3,h4,h5,h6{
+  @apply font-inter text-slate-800;
+}
+
+.h1{
+  @apply text-[64px] lg:text-[84px] leading-none;
+}
+.h2{
+  @apply text-[50px] leading-tight;
+}
+.h3{
+  @apply text-[25px];
+}
+
+.btn{
+  @apply h-[];
+} */
