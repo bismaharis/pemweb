@@ -31,9 +31,9 @@
       <div class="container mx-auto px-6 py-3 flex justify-between items-center">
         <a href="#" class="text-xl font-bold text-blue-600">AdBoostify</a>
         <nav class="space-x-4 m-auto bg-[#F7F7FD] p-3 pl-12 pr-12 rounded-full">
-          <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
-          <a href="#" class="text-gray-600 hover:text-blue-600">About Us</a>
-          <a href="#" class="text-gray-600 hover:text-blue-600">Services</a>
+          <a href="index.php" class="text-gray-600 hover:text-blue-600">Home</a>
+          <a href="About.php" class="text-gray-600 hover:text-blue-600">About Us</a>
+          <a href="Services.php" class="text-gray-600 hover:text-blue-600">Services</a>
           <a href="#" class="text-gray-600 hover:text-blue-600">Contact Us</a>
         </nav>
         <nav class="flex items-center">
