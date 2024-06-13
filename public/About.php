@@ -205,39 +205,38 @@
           <div class="flex justify-center space-x-8 mb-8">
             
             <!-- Front-End Developer -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-40 h-40 rounded-full flex items-center justify-center mb-4">
-                <img
-                  src="assets/images/bisma.jpg"
-                  alt="Front-End Developer"
-                  class="w-40 h-40 rounded-full object-cover" />
+            <div class="py-20 grid gap-28 md:gap-12 md:grid-cols-3">
+              <div class="border-t-4 space-y-8 group">
+                <div class="w-32 h-32 -mt-16 rounded-[2rem] rotate-45 overflow-hidden">
+                  <img src="assets/images/bisma.jpg" alt="Front-End" class="w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group group-hover:scale-[1.4]">
+                </div>
+                <div class="text-center">
+                  <h3 class="text-xl font-semibold text-slate-800">Bisma Haris</h3>
+                  <p class="text-sm text-slate-500">Front End Dev</p>
               </div>
-              <p class="font-semibold text-slate-600 max-w-20">Front-End Developer</p>
             </div>
             <!-- Back-End Developer -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-40 h-40 rounded-full  flex items-center justify-center mb-4">
-                <img
-                  src="assets/images/agil.jpg"
-                  alt="Back-End Developer"
-                  class="w-40 h-40 rounded-full object-cover" />
+            <div class="py-20 grid gap-28 md:gap-12 md:grid-cols-3">
+              <div class="border-t-4 space-y-8 group">
+                <div class="w-32 h-32 -mt-16 rounded-[2rem] rotate-45 overflow-hidden">
+                  <img src="assets/images/fadil.jpg" alt="Front-End" class="w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group group-hover:scale-[1.4]">
+                </div>
+                <div class="text-center">
+                  <h3 class="text-xl font-semibold text-slate-800">Fadil Fasa</h3>
+                  <p class="text-sm text-slate-500">Back End Dev</p>
               </div>
-              <p class="font-semibold text-slate-600 max-w-20">Back-End Developer</p>
             </div>
             <!-- Data Scientist -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-40 h-40 rounded-full flex items-center justify-center mb-4">
-                <img
-                  src="assets/images/fadil.jpg"
-                  alt="Data Scientist"
-                  class="w-40 h-40 rounded-full object-center" />
+            <div class="py-20 grid gap-28 md:gap-12 md:grid-cols-3">
+              <div class="border-t-4 space-y-8 group">
+                <div class="w-32 h-32 -mt-16 rounded-[2rem] rotate-45 overflow-hidden">
+                  <img src="assets/images/agil.jpg" alt="Front-End" class="w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group group-hover:scale-[1.4]">
+                </div>
+                <div class="text-center">
+                  <h3 class="text-xl font-semibold text-slate-800">Syahid Agil</h3>
+                  <p class="text-sm text-slate-500">Back End Dev</p>
               </div>
-              <p class="font-semibold text-slate-600 max-w-20">Data Scientist</p>
             </div>
-          </div>
           
         </div>
         

@@ -58,10 +58,22 @@
           <!-- Language Droptdown End -->
 
           <!-- Log In Sign In Start -->
-          <a
+          <?php if (isset($_SESSION["is_login"]) && $_SESSION["is_login"]) { ?>
+    <div class="px-4 py-2 bg-blue-600 text-white rounded-3xl hover:bg-blue-700 ml-4">Hallo, <?= htmlspecialchars($_SESSION["username"]); ?></div>
+<?php } else { ?>
+    <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-3xl hover:bg-blue-700">Sign In</a>
+    <a href="#" class="px-4 py-2 bg-white ring-blue-600 text-blue-600 rounded-3xl hover:bg-blue-600 hover:text-white">Log In</a>
+<?php } ?>
+
+            <!-- <a
+              href="#"
+              class="px-4 py-2 bg-white ring-blue-600 text-blue-600 rounded-3xl hover:bg-blue-600 hover:text-white ml-1"
+              >Log In</a
+            > -->
+          <!-- <div
               class="px-4 py-2 bg-blue-600 text-white rounded-3xl hover:bg-blue-700 ml-4"
-              >Hallo, <?= $_SESSION["username"]?></a
-            >
+              >Hallo, 
+              ?></div> -->
             <!-- <a
               href="#"
               class="px-4 py-2 bg-white ring-blue-600 text-blue-600 rounded-3xl hover:bg-blue-600 hover:text-white ml-1"

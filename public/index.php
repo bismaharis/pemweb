@@ -42,70 +42,20 @@
       }
 
       .testimonial-card:hover {
-      transform: scale(1.05);
+        transform: scale(1.05);
       }
     </style>
   </head>
   <body class="bg-slate-100">
     
     <!-- Header Start -->
-    <header class="bg-white fixed top-0 left-0 w-full shadow z-50 transition-opacity">
-      <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-        <a href="#" class="text-xl font-bold text-blue-600">AdBoostify</a>
-        <div class="flex items-center lg:hidden">
-          <button id="hamburger" class="text-slate-600 hover:text-blue-600 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
-        <nav id="nav-menu" class="hidden lg:flex space-x-4 m-auto bg-[#F7F7FD] p-3 pl-12 pr-12 rounded-full">
-          <a href="index.php" class="text-gray-600 hover:text-blue-600">Home</a>
-          <a href="About.php" class="text-gray-600 hover:text-blue-600">About Us</a>
-          <a href="Services.php" class="text-gray-600 hover:text-blue-600">Services</a>
-          <a href="#" class="text-gray-600 hover:text-blue-600">Contact Us</a>
-        </nav>
-        <nav class="flex items-center space-x-4">
-          <!-- Language Dropdown Start -->
-          <div class="relative inline-block text-left dropdown">
-            <div>
-              <button type="button" class="inline-flex justify-center w-full px-2 py-2 bg-white text-sm font-normal text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true" onclick="toggleDropdown()">
-                ENG
-                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a 1 1 0 01-1.414 0l-4-4a 1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </button>
-            </div>
-            <div class="dropdown-content origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" id="dropdown-menu">
-              <div class="py-1" role="none">
-                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" onclick="setLanguage('ENG')">ENG</a>
-                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1" onclick="setLanguage('IND')">IND</a>
-              </div>
-            </div>
-          </div>
-          <!-- Language Dropdown End -->
-          <!-- Log In Sign In Start -->
-          <a href="signin.php" class="px-4 py-2 bg-blue-600 text-white rounded-3xl hover:bg-blue-700">Sign In</a>
-          <a href="login.php" class="px-4 py-2 bg-white ring-blue-600 text-blue-600 rounded-3xl hover:bg-blue-600 hover:text-white">Log In</a>
-          <!-- Log In Sign In End -->
-        </nav>
-      </div>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden lg:hidden">
-        <nav class="bg-white px-2 pt-2 pb-4 space-y-1">
-          <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Home</a>
-          <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">About Us</a>
-          <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Services</a>
-          <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Contact Us</a>
-        </nav>
-      </div>
-    </header>
-    <!-- Header End -->
+    <?php include "header.php"?>
+    <!-- Header End -->
 
     <!-- Main Content Start -->
     <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
       <!-- Hero Section Start-->
-      <section class="relative flex xl:h-[840px] items-center justify-between p-8 bg-white shadow-lg rounded-lg max-w-full mx-auto my-16 h-screen">
+      <section class="relative flex xl:h-screen items-center justify-between p-8 bg-white shadow-lg rounded-lg max-w-full mx-auto my-16 h-screen">
         <div class="absolute inset-0 bg-image rounded-r-lg"></div>
         <div class="relative z-10 md:w-1/2 mb-8 xl:ml-12 md:ml-0 sm:ml-0 md:mb-0 bg-white bg-opacity-75 p-16 rounded-lg">
           <p class="text-[#F3BC4C] font-semibold">ADS SERVICE</p>
@@ -117,7 +67,7 @@
       <!-- Hero Section End -->
 
       <!-- Fitur Utama Start -->
-      <section class="text-center mt-36 mb-36 max-w-2xl justify-center mx-auto">
+      <section class="text-center mt-20 max-w-2xl justify-center mx-auto">
         <div class="flex">
           <img src="../public/assets/images/shape.jpg" alt="shape" class="w-20 h-20">
           <h1 class="text-3xl font-semibold mb-8 max-w-lg">Helping You Grow Your Business: Our Comprehensive Advertising Services.</h1>
@@ -148,16 +98,16 @@
       <!-- Fitur Utama End -->
 
       <!-- Layanan Ads Start -->
-      <section class="container mx-auto px-6 max-w-6xl">
+      <section class="container mx-auto px-6 max-w-6xl mb-10">
         <section class="text-center my-10 pt-20">
           <h2 class="text-3xl font-bold text-gray-800">We have multidisciplinary teams to meet any <span class="text-blue-600">challenge</span>.</h2>
         </section>
         <section class="flex justify-center bg-white shadow-lg rounded-lg p-8">
           <!-- Youtube Ads -->
           <button onclick="location.href='custom-content.html'" class="bg-white p-6 rounded-lg  hover:bg-gray-50 transition">
-            <div class="flex flex-col items-left">
-              <div class="ri-youtube-line mb-2 text-7xl text-left text-sky-600"></div>
-              <div class="text-left max-w-md">
+            <div class="flex flex-col items-center">
+              <div class="ri-youtube-line mb-2 text-7xl text-center text-sky-600"></div>
+              <div class="text-center max-w-40">
                 <h2 class="text-xl font-semibold">Youtube Ads</h2>
                 <p class="text-gray-500">Our team understands the marketplace and YouTube ads algorithm.</p>
               </div>
@@ -165,21 +115,11 @@
           </button>
           <!-- Google Ads -->
           <button onclick="location.href='custom-content.html'" class="bg-white p-6 rounded-lg  hover:bg-gray-50 transition">
-            <div class="flex flex-col items-left">
-              <div class="ri-google-line mb-2 text-7xl text-left text-sky-600"></div>
-              <div class="text-left max-w-md">
+            <div class="flex flex-col items-center max-w-10">
+              <div class="ri-google-line mb-2 text-7xl text-center text-sky-600"></div>
+              <div class="text-center max-w-40">
                 <h2 class="text-xl font-semibold">Google Ads</h2>
                 <p class="text-gray-500">Our team understands the marketplace and Google ads algorithm.</p>
-              </div>
-            </div>
-          </button>
-          <!-- Facebook Ads -->
-          <button onclick="location.href='custom-content.html'" class="bg-white p-6 rounded-lg  hover:bg-gray-50 transition">
-            <div class="flex flex-col items-left">
-              <div class="ri-facebook-box-line mb-2 text-7xl text-left text-sky-600"></div>
-              <div class="text-left max-w-md">
-                <h2 class="text-xl font-semibold">Facebook Ads</h2>
-                <p class="text-gray-500">Our team understands the marketplace and Facebook ads algorithm.</p>
               </div>
             </div>
           </button>
@@ -188,7 +128,7 @@
       <!-- Layanan Ads End -->
 
       <!-- Swiper News Start -->
-      <section class="testimonial relative text-center max-w-6xl mx-auto p-8 m-56">
+      <section class="testimonial relative text-center max-w-6xl mx-auto p-8 mt-20">
         <div class="flex justify-center items-start px-8">
           <img src="../public/assets/images/bg-kerjasama.jpg" alt="kerjasama" width="50%" height="400px">
           <div class="flex flex-col ml-8 z10"> 
@@ -196,77 +136,84 @@
             <p class="text-gray-500 mt-4">Our team has expertise in editing and data analyst.</p>
           </div>
         </div>
-        <div class="testimonial__slider swiper mt-8"> 
-          <div class="swiper-wrapper flex flex-wrap justify-center relative z-20"> 
-
-            <!-- Slide 1 -->
-            <div class="swiper-slide w-full sm:w-1/3 p-2"> <!-- Adjusted width and padding -->
-              <div class="testimonial__item bg-white p-8 rounded-lg shadow-lg">
-                <div class="flex items-center mb-2">
-                    <div class="flex-shrink-0">
-                        <img src="assets/images/logo-1.jpg" alt="Mary Agil" class="w-12 h-12 rounded-full">
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-xl font-semibold">Mary Agil</p>
-                        <p class="text-sm text-gray-500">CEO of NoMoreZits</p>
-                    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-36">
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2 mr-4">
+            <div class="flex items-center mb-2">
+                <div class="flex-shrink-0">
+                    <img src="assets/images/logo-3.jpg" alt="Fadil Clark" class="w-12 h-12 rounded-full">
                 </div>
-                <hr class="m-3">
-                <div class="text-left">
-                  <p class="text-gray-600 mb-3 font-semibold">"Exceptional Solutions, Exceeded Expectations!"</p>
-                  <p class="text-gray-500">"Working with AdBoostify has been an absolute pleasure. Their team took the time to understand our unique needs and delivered a solution that not only met but exceeded our expectations. Their expertise and commitment to excellence are truly commendable."</p>
+                <div class="ml-4">
+                    <p class="text-xl font-semibold">Fadil Clark</p>
+                    <p class="text-sm text-gray-500">CMO of BCare Apps</p>
                 </div>
-              </div>
             </div>
-      
-            <!-- Slide 2 -->
-            <div class="swiper-slide w-full sm:w-1/3 p-2"> <!-- Adjusted width and padding -->
-              <div class="testimonial__item bg-white p-8 rounded-lg shadow-lg">
-                <div class="flex items-center mb-2">
-                    <div class="flex-shrink-0">
-                        <img src="assets/images/logo-2.jpg" alt="Mark Rizal" class="w-12 h-12 rounded-full">
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-xl font-semibold">Mark Rizal</p>
-                        <p class="text-sm text-gray-500">COO of AyoLari</p>
-                    </div>
-                </div>
-                <hr class="m-3">
-                <div class="text-left">
-                  <p class="text-gray-600 mb-3 font-semibold">"Transformed Our Business with Innovative Tech!"</p>
-                  <p class="text-gray-500">"We owe a significant part of our success to AdBoostify. Their custom ads content solution streamlined our processes, saving us time and resources. Their team's dedication to innovation and problem-solving is unmatched. We're grateful for their partnership."</p>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Slide 3 -->
-            <div class="swiper-slide w-full sm:w-1/3 p-2"> <!-- Adjusted width and padding -->
-              <div class="testimonial__item bg-white p-8 rounded-lg shadow-lg">
-                <div class="flex items-center mb-2">
-                    <div class="flex-shrink-0">
-                        <img src="assets/images/logo-3.jpg" alt="Fadil Clark" class="w-12 h-12 rounded-full">
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-xl font-semibold">Fadil Clark</p>
-                        <p class="text-sm text-gray-500">CMO of BCare Apps</p>
-                    </div>
-                </div>
-                <hr class="m-3">
-                <div class="text-left">
-                  <p class="text-gray-600 mb-3 font-semibold">"Sculpted User Experiences Beyond Imagination!"</p>
-                  <p class="text-gray-500">"The content crafted by AdBoostify turned our app into a masterpiece. The attention to detail, intuitive design and user-centric approach have resulted in rave reviews from our customers. Their content expertise has taken our brand to a whole new level."</p>
-                </div>
-              </div>
+            <hr class="m-3">
+            <div class="text-left">
+              <p class="text-gray-600 mb-3 font-semibold">"Sculpted User Experiences Beyond Imagination!"</p>
+              <p class="text-gray-500">"The content crafted by AdBoostify turned our app into a masterpiece. The attention to detail, intuitive design and user-centric approach have resulted in rave reviews from our customers. Their content expertise has taken our brand to a whole new level."</p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2 mr-4">
+            <div class="flex items-center mb-2">
+                <div class="flex-shrink-0">
+                    <img src="assets/images/logo-2.jpg" alt="Mark Rizal" class="w-12 h-12 rounded-full">
+                </div>
+                <div class="ml-4">
+                    <p class="text-xl font-semibold">Mark Rizal</p>
+                    <p class="text-sm text-gray-500">COO of AyoLari</p>
+                </div>
+            </div>
+            <hr class="m-3">
+            <div class="text-left">
+              <p class="text-gray-600 mb-3 font-semibold">"Transformed Our Business with Innovative Tech!"</p>
+              <p class="text-gray-500">"We owe a significant part of our success to AdBoostify. Their custom ads content solution streamlined our processes, saving us time and resources. Their team's dedication to innovation and problem-solving is unmatched. We're grateful for their partnership."</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mr-4">
+            <div class="flex items-center mb-2">
+                <div class="flex-shrink-0">
+                    <img src="assets/images/logo-1.jpg" alt="Mary Agil" class="w-12 h-12 rounded-full">
+                </div>
+                <div class="ml-4">
+                    <p class="text-xl font-semibold">Mary Agil</p>
+                    <p class="text-sm text-gray-500">CEO of NoMoreZits</p>
+                </div>
+            </div>
+            <hr class="m-3">
+            <div class="text-left">
+              <p class="text-gray-600 mb-3 font-semibold">"Exceptional Solutions, Exceeded Expectations!"</p>
+              <p class="text-gray-500">"Working with AdBoostify has been an absolute pleasure. Their team took the time to understand our unique needs and delivered a solution that not only met but exceeded our expectations. Their expertise and commitment to excellence are truly commendable."</p>
+            </div>
+          </div>
+
+          <!-- <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2 mr-4">
+            <div class="flex items-center mb-2">
+              <div class="flex-shrink-0">
+                <img src="assets/images/logo-3.jpg" alt="Fadil Clark" class="w-12 h-12 rounded-full">
+              </div>
+              <div class="ml-4">
+                <p class="text-xl font-semibold">Fadil Clark</p>
+                <p class="text-sm text-gray-500">CMO of BCare Apps</p>
+              </div>
+            </div>
+            <hr class="m-3">
+            <div class="text-left">
+              <p class="text-gray-600 mb-3 font-semibold">"A Partnership Built on Trust and Innovation!"</p>
+              <p class="text-gray-500">"Partnering with Abudsoftly has been a game changer for us. Their
+                team doesn't just deliver projects; they also anticipate potential
+                challenges and opportunities, ensuring our operations run smoothly
+                and effectively."</p>
+            </div>
+          </div> -->
         </div>
       </section>      
       <!-- Swiper News End -->
 
       <!-- Histori Section Start -->
-      <section class="py-16 mt-20">
-        <div class="max-w-6xl mx-auto">
+      <section>
+        <div class="max-w-6xl mx-auto mb-20">
           <div class="flex">
             <img src="assets/images/shape.jpg" alt="shape-3" width="70px" height="50px" class="ml-4">
             <h2 class="text-3xl font-semibold mb-8 text-left ml-4 mt-4">Our Success Stories</h2>
