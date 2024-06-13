@@ -55,7 +55,7 @@
     <!-- Main Content Start -->
     <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
       <!-- Hero Section Start-->
-      <section class="relative flex xl:h-screen items-center justify-between p-8 bg-white shadow-lg rounded-lg max-w-full mx-auto my-16 h-screen">
+      <section class="relative flex xl:h-screen items-center justify-between p-8 bg-white shadow-lg rounded-lg max-w-full mx-auto my-16 sm:my-0 h-screen">
         <div class="absolute inset-0 bg-image rounded-r-lg"></div>
         <div class="relative z-10 md:w-1/2 mb-8 xl:ml-12 md:ml-0 sm:ml-0 md:mb-0 bg-white bg-opacity-75 p-16 rounded-lg">
           <p class="text-[#F3BC4C] font-semibold">ADS SERVICE</p>
