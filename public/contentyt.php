@@ -118,9 +118,11 @@
                 </div>
                 <div class="mt-4">
                     <h2 class="text-xl font-bold mb-2">Berlangganan sekarang</h2>
+                    <a href="https://app.sandbox.midtrans.com/payment-links/1718127254117">
                     <div class="flex space-x-4">
                         <button class="bg-gray-200 text-gray-600 px-4 py-2 rounded hover:bg-gray-300">Bayar</button>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
