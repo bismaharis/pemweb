@@ -35,70 +35,7 @@
   </head>
   <body>
     <!-- Header Star -->
-    <header
-      class="bg-white fixed top-0 left-0 w-full shadow z-50 transition-opacity">
-      <div
-        class="container mx-auto px-6 py-3 flex justify-between items-center">
-        <a href="#" class="text-xl font-bold text-blue-600">AdBoostify</a>
-        <nav class="space-x-4 m-auto bg-[#F7F7FD] p-3 pl-12 pr-12 rounded-full">
-          <a href="index.php" class="text-gray-600 hover:text-blue-600">Home</a>
-          <a href="About.php" class="text-gray-600 hover:text-blue-600">About Us</a>
-          <a href="Services.php" class="text-gray-600 hover:text-blue-600">Services</a>
-          <a href="#" class="text-gray-600 hover:text-blue-600">Contact Us</a>
-        </nav>
-        <nav class="flex items-center">
-          <!-- Language Dropdown Start -->
-          <div class="relative inline-block text-left dropdown">
-            <div>
-              <button
-                type="button"
-                class="inline-flex justify-center w-full px-2 py-2 bg-white text-sm font-normal text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
-                id="menu-button"
-                aria-expanded="true"
-                aria-haspopup="true"
-                onclick="toggleDropdown()">
-                ENG
-                <svg
-                  class="-mr-1 ml-2 h-5 w-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true">
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a 1 1 0 01-1.414 0l-4-4a 1 1 0 010-1.414z"
-                    clip-rule="evenodd" />
-                </svg>
-              </button>
-            </div>
-            <div
-              class="dropdown-content origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="menu-button"
-              id="dropdown-menu">
-              <div class="py-1" role="none">
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-0"
-                  onclick="setLanguage('ENG')"
-                  >ENG</a
-                >
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-1"
-                  onclick="setLanguage('IND')"
-                  >IND</a
-                >
-              </div>
-            </div>
-          </div>
+    <?php include "header.php"?>
           <!-- Language Droptdown End -->
 
           <!-- Log In Sign In Start -->
@@ -112,64 +49,35 @@
     <!-- About Start -->
     <section id="about-us" class="bg-white py-16 mt-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <img
-          src="assets/images/shape.jpg"
-          alt="icon"
-          width="50px"
-          height="60px"
-          class="absolute -ml-12" />
-        <div
-          class="absolute -ml-8 w-1 h-full mt-16 bg-gradient-to-b from-blue-500 to-green-500"></div>
+        <img src="assets/images/shape.jpg" alt="icon" width="50px" height="60px" class="absolute -ml-12" />
+        <div class="absolute -ml-8 w-1 h-full mt-16 bg-gradient-to-b from-blue-500 to-green-500"></div>
         <div class="text-left mb-12 ml-8">
           <h2 class="text-xl font-bold text-yellow-500">About Us</h2>
-          <p
-            class="mt-4 text-3xl max-w-2xl leading-8 font-semibold text-slate-700">
-            For more than a year, we've collaborated with industry pioneers to
-            swiftly expand their teams and address their business obstacles.
+          <p class="mt-4 text-3xl max-w-2xl leading-8 font-semibold text-slate-700">
+            For more than a year, we've collaborated with industry pioneers to swiftly expand their teams and address their business obstacles.
           </p>
         </div>
 
-        <div
-          class="flex flex-col md:flex-row items-center md:items-start mb-12">
+        <div class="flex flex-col md:flex-row items-center md:items-start mb-12">
           <div class="md:w-1/2 ml-8">
             <p class="text-lg font-semibold text-slate-700 mt-28 max-w-xl">
-              At Abudsoftly, we are driven by the belief that technology can
-              transform businesses and elevate their potential. Founded in 2024,
-              we have been on a mission to empower organizations with innovative
-              solutions that drive growth, efficiency, and success.
+              At Abudsoftly, we are driven by the belief that technology can transform businesses and elevate their potential. Founded in 2024, we have been on a mission to empower organizations with innovative solutions that drive growth, efficiency, and success.
             </p>
           </div>
           <div class="md:w-1/2 md:pl-10">
-            <img
-              src="assets/images/image-1.jpg"
-              alt="Team working together"
-              class="-mt-20 ml-8" />
+            <img src="assets/images/image-1.jpg" alt="Team working together" class="-mt-20 ml-8" />
           </div>
         </div>
 
-        <div></div>
-        <img
-          src="assets/images/shape-2.jpg"
-          alt="icon"
-          width="50px"
-          height="60px"
-          class="absolute -ml-12 mt-2" />
-        <div
-          class="absolute -ml-8 w-1 h-full mt-16 bg-gradient-to-b from-green-500 to-blue-500"></div>
-        <div
-          class="flex flex-col md:flex-row items-center md:items-start mb-12">
+        <img src="assets/images/shape-2.jpg" alt="icon" width="50px" height="60px" class="absolute -ml-12 mt-2" />
+        <div class="absolute -ml-8 w-1 h-full mt-16 bg-gradient-to-b from-green-500 to-blue-500"></div>
+        <div class="flex flex-col md:flex-row items-center md:items-start mb-12">
           <div class="md:w-1/2 md:order-2 md:pl-10 text-right mt-8">
             <div class="text-right mb-4 ml-12">
               <h2 class="text-xl font-bold text-yellow-500">Our Story</h2>
             </div>
             <p class="text-lg font-semibold text-slate-700 mt-2 max-w-xl">
-              Our journey began when a group of passionate technologists saw the
-              untapped potential of digital technology to revolutionize
-              industries. With a shared vision, we embarked on a mission to
-              bridge the gap between cutting-edge technology and businesses
-              seeking to harness its power. Over a year, we have evolved into a
-              team of experts who thrive on challenges, creativity, and
-              collaboration.
+              Our journey began when a group of passionate technologists saw the untapped potential of digital technology to revolutionize industries. With a shared vision, we embarked on a mission to bridge the gap between cutting-edge technology and businesses seeking to harness its power. Over a year, we have evolved into a team of experts who thrive on challenges, creativity, and collaboration.
             </p>
           </div>
           <div class="md:w-1/2 md:order-1 ml-8">
@@ -184,80 +92,70 @@
             <p class="text-4xl text-slate-700">Since then...</p>
             <br />
             <p class="text-4xl text-slate-700">
-              We've completed more than
-              <span class="font-bold">900 projects</span> for over
-              <span class="font-bold">500 distinct enterprises.</span>
+              We've completed more than <span class="font-bold">900 projects</span> for over <span class="font-bold">500 distinct enterprises.</span>
             </p>
           </div>
           <div class="md:w-1/2 md:order-1 -ml-2 mt-20">
             <img src="assets/images/medal-star.jpg" alt="medal star" />
           </div>
         </div>
-        <div
-          class="absolute -ml-10 -mt-36 w-5 h-5 rounded-full bg-blue-500"></div>
+        <div class="absolute -ml-10 -mt-36 w-5 h-5 rounded-full bg-blue-500"></div>
 
         <div class="absolute mt-44 -ml-8 w-1 h-full bg-gradient-to-b from-green-500 to-blue-500"></div>
 
         <div class="relative text-center mt-36 mb-52">
           <div class="absolute mt-2 -ml-10 w-5 h-5 rounded-full bg-green-500"></div>
-          <h2 class="font-semibold text-left ml-12 text-2xl mb-36">
-            For a year our Front-End developers, Front-End developers, and Data Scientist work on hundreds of exciting projects...</h2>
+          <h2 class="font-semibold text-left ml-12 text-2xl mb-36">For a year our Front-End developers, Front-End developers, and Data Scientist work on hundreds of exciting projects...</h2>
           <div class="flex justify-center space-x-8 mb-8">
-            
+
             <!-- Front-End Developer -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-40 h-40 rounded-full flex items-center justify-center mb-4">
-                <img
-                  src="assets/images/bisma.jpg"
-                  alt="Front-End Developer"
-                  class="w-40 h-40 rounded-full object-cover" />
+            <div class="py-20 space-y-8 group">
+              <div class="w-32 h-32 -mt-16 rounded-[2rem] rotate-45 overflow-hidden">
+                <img src="assets/images/bisma.png" alt="Front-End" class="w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
               </div>
-              <p class="font-semibold text-slate-600 max-w-20">Front-End Developer</p>
+              <div class="text-center bg-pink-400">
+                <h3 class="text-xl font-semibold text-slate-800">Bisma Haris</h3>
+                <p class="text-sm text-slate-500">Front End Dev</p>
+              </div>
             </div>
             <!-- Back-End Developer -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-40 h-40 rounded-full  flex items-center justify-center mb-4">
-                <img
-                  src="assets/images/agil.jpg"
-                  alt="Back-End Developer"
-                  class="w-40 h-40 rounded-full object-cover" />
+            <div class="py-20 space-y-8 group">
+              <div class="w-32 h-32 -mt-16 rounded-[2rem] rotate-45 overflow-hidden">
+                <img src="assets/images/fadil 1.png" alt="Back-End" class="w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
               </div>
-              <p class="font-semibold text-slate-600 max-w-20">Back-End Developer</p>
+              <div class="text-center">
+                <h3 class="text-xl font-semibold text-slate-800">Fadil Fasa</h3>
+                <p class="text-sm text-slate-500">Back End Dev</p>
+              </div>
             </div>
             <!-- Data Scientist -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-40 h-40 rounded-full flex items-center justify-center mb-4">
-                <img
-                  src="assets/images/fadil.jpg"
-                  alt="Data Scientist"
-                  class="w-40 h-40 rounded-full object-center" />
+            <div class="py-20 space-y-8 group">
+              <div class="w-32 h-32 -mt-16 rounded-[2rem] rotate-45 overflow-hidden">
+                <img src="assets/images/agil.png" alt="Data Scientist" class="w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
               </div>
-              <p class="font-semibold text-slate-600 max-w-20">Data Scientist</p>
+              <div class="text-center">
+                <h3 class="text-xl font-semibold text-slate-800">Syahid Agil</h3>
+                <p class="text-sm text-slate-500">Data Scientist</p>
+              </div>
             </div>
           </div>
-          
         </div>
-        
-        <!-- komen start -->
+
         <div class="absolute -ml-8 w-1 h-5/6 bg-gradient-to-b from-blue-500 to-green-500"></div>
         <div class="absolute -mt-2 -ml-10 w-5 h-5 rounded-full bg-blue-500"></div>
         <div class="-mt-2">
           <h3 class="font-semibold text-left ml-12 text-2xl mb-20">...who say many kind words that make us proud.</h3>
         </div>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-36">
-          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2 mr-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-36">
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2">
             <div class="flex items-center mb-2">
-                <div class="flex-shrink-0">
-                    <img src="assets/images/logo-3.jpg" alt="Fadil Clark" class="w-12 h-12 rounded-full">
-                </div>
-                <div class="ml-4">
-                    <p class="text-xl font-semibold">Fadil Clark</p>
-                    <p class="text-sm text-gray-500">CMO of BCare Apps</p>
-                </div>
+              <div class="flex-shrink-0">
+                <img src="assets/images/logo-3.jpg" alt="Fadil Clark" class="w-12 h-12 rounded-full">
+              </div>
+              <div class="ml-4">
+                <p class="text-xl font-semibold">Fadil Clark</p>
+                <p class="text-sm text-gray-500">CMO of BCare Apps</p>
+              </div>
             </div>
             <hr class="m-3">
             <div class="text-left">
@@ -266,15 +164,15 @@
             </div>
           </div>
 
-          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2 mr-4">
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2">
             <div class="flex items-center mb-2">
-                <div class="flex-shrink-0">
-                    <img src="assets/images/logo-2.jpg" alt="Mark Rizal" class="w-12 h-12 rounded-full">
-                </div>
-                <div class="ml-4">
-                    <p class="text-xl font-semibold">Mark Rizal</p>
-                    <p class="text-sm text-gray-500">COO of AyoLari</p>
-                </div>
+              <div class="flex-shrink-0">
+                <img src="assets/images/logo-2.jpg" alt="Mark Rizal" class="w-12 h-12 rounded-full">
+              </div>
+              <div class="ml-4">
+                <p class="text-xl font-semibold">Mark Rizal</p>
+                <p class="text-sm text-gray-500">COO of AyoLari</p>
+              </div>
             </div>
             <hr class="m-3">
             <div class="text-left">
@@ -283,15 +181,15 @@
             </div>
           </div>
 
-          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mr-4">
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2">
             <div class="flex items-center mb-2">
-                <div class="flex-shrink-0">
-                    <img src="assets/images/logo-1.jpg" alt="Mary Agil" class="w-12 h-12 rounded-full">
-                </div>
-                <div class="ml-4">
-                    <p class="text-xl font-semibold">Mary Agil</p>
-                    <p class="text-sm text-gray-500">CEO of NoMoreZits</p>
-                </div>
+              <div class="flex-shrink-0">
+                <img src="assets/images/logo-1.jpg" alt="Mary Agil" class="w-12 h-12 rounded-full">
+              </div>
+              <div class="ml-4">
+                <p class="text-xl font-semibold">Mary Agil</p>
+                <p class="text-sm text-gray-500">CEO of NoMoreZits</p>
+              </div>
             </div>
             <hr class="m-3">
             <div class="text-left">
@@ -300,28 +198,25 @@
             </div>
           </div>
 
-          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2 mr-4">
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-2">
             <div class="flex items-center mb-2">
-                <div class="flex-shrink-0">
-                    <img src="assets/images/logo-3.jpg" alt="Fadil Clark" class="w-12 h-12 rounded-full">
-                </div>
-                <div class="ml-4">
-                    <p class="text-xl font-semibold">Fadil Clark</p>
-                    <p class="text-sm text-gray-500">CMO of BCare Apps</p>
-                </div>
+              <div class="flex-shrink-0">
+                <img src="assets/images/logo-3.jpg" alt="Fadil Clark" class="w-12 h-12 rounded-full">
+              </div>
+              <div class="ml-4">
+                <p class="text-xl font-semibold">Fadil Clark</p>
+                <p class="text-sm text-gray-500">CMO of BCare Apps</p>
+              </div>
             </div>
             <hr class="m-3">
             <div class="text-left">
               <p class="text-gray-600 mb-3 font-semibold">"A Partnership Built on Trust and Innovation!"</p>
-              <p class="text-gray-500">"Partnering with Abudsoftly has been a game changer for us. Their
-                team doesn't just deliver projects; they also anticipate potential
-                challenges and opportunities, ensuring our operations run smoothly
-                and effectively."</p>
+              <p class="text-gray-500">"Partnering with Abudsoftly has been a game changer for us. Their team doesn't just deliver projects; they also anticipate potential challenges and opportunities, ensuring our operations run smoothly and effectively."</p>
             </div>
           </div>
         </div>
         <div class="absolute -mt-40 -ml-10 w-5 h-5 rounded-full bg-green-500"></div>
-        <!-- komen end -->
+      </div>
     </section>
 
     <!-- About End -->

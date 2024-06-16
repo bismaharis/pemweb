@@ -70,7 +70,7 @@
         </div>
         <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
           
-        <button onclick="location.href='custom-content.html'" class="bg-white p-6 rounded-lg custom-shadow hover:bg-gray-50 transition">
+        <button onclick="location.href='customcontent.php'" class="bg-white p-6 rounded-lg custom-shadow hover:bg-gray-50 transition">
             <div class="flex flex-col items-left">
               <div class="ri-brush-line mb-2 text-orange-600 text-5xl text-left"></div>
               <div class="text-left max-w-md">
@@ -80,7 +80,7 @@
             </div>
           </button>
   
-          <button onclick="location.href='media-social.html'" class="bg-white p-6 rounded-lg custom-shadow hover:bg-gray-50 transition">
+          <button onclick="location.href='advertizing.php'" class="bg-white p-6 rounded-lg custom-shadow hover:bg-gray-50 transition">
             <div class="flex flex-col items-left">
               <div class="ri-clapperboard-line mb-2 text-5xl text-orange-700 text-left"></div>
               <div class="text-left max-w-md">
@@ -94,16 +94,16 @@
       <!-- Fitur Utama End -->
 
       <!-- Layanan Ads Start -->
-      <section class="container mx-auto px-6 max-w-6xl">
+      <section class="container mx-auto px-6 max-w-6xl mb-10">
         <section class="text-center my-10 pt-20">
           <h2 class="text-3xl font-bold text-gray-800">We have multidisciplinary teams to meet any <span class="text-blue-600">challenge</span>.</h2>
         </section>
         <section class="flex justify-center bg-white shadow-lg rounded-lg p-8">
           <!-- Youtube Ads -->
           <button onclick="location.href='custom-content.html'" class="bg-white p-6 rounded-lg  hover:bg-gray-50 transition">
-            <div class="flex flex-col items-left">
-              <div class="ri-youtube-line mb-2 text-7xl text-left text-sky-600"></div>
-              <div class="text-left max-w-md">
+            <div class="flex flex-col place-items-center max-w-5">
+              <div class="ri-youtube-line mb-2 text-7xl text-center text-sky-600"></div>
+              <div class="text-center max-w-xl">
                 <h2 class="text-xl font-semibold">Youtube Ads</h2>
                 <p class="text-gray-500">Our team understands the marketplace and YouTube ads algorithm.</p>
               </div>
@@ -111,16 +111,19 @@
           </button>
           <!-- Google Ads -->
           <button onclick="location.href='custom-content.html'" class="bg-white p-6 rounded-lg  hover:bg-gray-50 transition">
-            <div class="flex flex-col items-left">
-              <div class="ri-google-line mb-2 text-7xl text-left text-sky-600"></div>
-              <div class="text-left max-w-md">
+            <div class="flex flex-col place-items-center max-w-5">
+              <div class="ri-google-line mb-2 text-7xl text-center text-sky-600"></div>
+              <div class="text-center max-w-xl">
                 <h2 class="text-xl font-semibold">Google Ads</h2>
                 <p class="text-gray-500">Our team understands the marketplace and Google ads algorithm.</p>
               </div>
             </div>
           </button>
+        </section>
+      </section>
+      <!-- Layanan Ads End -->
           <!-- Facebook Ads -->
-          <button onclick="location.href='custom-content.html'" class="bg-white p-6 rounded-lg  hover:bg-gray-50 transition">
+          <!-- <button onclick="location.href='custom-content.html'" class="bg-white p-6 rounded-lg  hover:bg-gray-50 transition">
             <div class="flex flex-col items-left">
               <div class="ri-facebook-box-line mb-2 text-7xl text-left text-sky-600"></div>
               <div class="text-left max-w-md">
@@ -128,7 +131,7 @@
                 <p class="text-gray-500">Our team understands the marketplace and Facebook ads algorithm.</p>
               </div>
             </div>
-          </button>
+          </button> -->
         </section>
       </section>
       <!-- Layanan Ads End -->
