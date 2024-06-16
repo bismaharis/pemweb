@@ -169,7 +169,66 @@ unset($_SESSION['upload_notif']);
               <button class="bg-gray-200 text-gray-600 px-4 py-2 rounded hover:bg-gray-300" type="submit" onclick="saveOrderAndPay()">Upload</button>
             </form>
           </div>
+          <!-- Language Dropdown End -->
+          <!-- Log In Sign In Start -->
+          <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-3xl hover:bg-blue-700">Sign In</a>
+          <a href="#" class="px-4 py-2 bg-white ring-2 ring-blue-600 text-blue-600 rounded-3xl hover:bg-blue-600 hover:text-white">Log In</a>
+          <!-- Log In Sign In End -->
+          </nav>
         </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden">
+          <nav class="bg-white px-2 pt-2 pb-4 space-y-1">
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Home</a>
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">About Us</a>
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Services</a>
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Contact Us</a>
+          </nav>
+        </div>
+        </header>
+        <!-- Header End -->
+
+        <main class="container mx-auto mt-20 p-10 bg-white shadow-lg rounded-lg">
+          <div class="grid md:grid-cols-2 gap-10">
+            <div>
+              <div class="bg-red-100 rounded p-4 text-center">
+                <h1 class="text-2xl font-bold text-red-600">Youtube</h1>
+                <p class="text-3xl font-bold text-gray-800">Rp28.000<span class="text-lg font-normal">/Content</span></p>
+              </div>
+              <div class="mt-4 p-2 bg-gray-100 rounded shadow">
+                <h2 class="text-xl font-bold mb-2">Upload Content</h2>
+                <div class="p-4 border rounded bg-white text-center shadow">
+                  <p1 class="text-xl font-bold mb-2">Target Pasar Anda</p1>
+                  <input type="text" class="w-full border rounded p-2 mt-2" placeholder="Masukkan target pasar anda">
+                  <img src="https://www.youtube.com/img/desktop/yt_1200.png" alt="YouTube Premium" class="mx-auto mb-2" style="width: 100px;">
+                  <button class="bg-gray-200 text-gray-600 px-4 py-2 rounded hover:bg-gray-300">Custom Content</button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="bg-red-100 rounded p-4 text-center mb-4">
+                <h2 class="text-xl font-bold text-red-600">Paket Custom Content</h2>
+                <p class="text-gray-700">Kirimkan video anda agar kami yang mengelola</p>
+                <p class="text-sm text-gray-600 mt-2">lebih mudah • target pasar terukur • usaha anda akan booming seketika</p>
+              </div>
+
+              <div class="p-8 bg-gray-50 rounded shadow">
+                <h2 class="text-xl font-bold mb-4">Harga</h2>
+                <ul class="text-gray-700">
+                  <li class="flex justify-between border-b py-1"><span>Nama Paket</span><span>Custom Content</span></li>
+                  <li class="flex justify-between border-b py-1"><span>Harga</span><span>Rp28.000</span></li>
+                </ul>
+              </div>
+              <div class="mt-4">
+                <h2 class="text-xl font-bold mb-2">Berlangganan sekarang</h2>
+                <a href="https://app.sandbox.midtrans.com/payment-links/1718127254117">
+                  <div class="flex space-x-4">
+                    <button class="bg-gray-200 text-gray-600 px-4 py-2 rounded hover:bg-gray-300">Bayar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
       </div>
       <div>
         <div class="bg-red-100 rounded p-4 text-center mb-4">
